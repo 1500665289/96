@@ -1,0 +1,963 @@
+<BPSuperPartDefs><List>
+	<Def Name="SuperPart_TunTian_Atk1"><!--基础攻击秘体-混元臂-->
+		<Prefix>混元臂</Prefix>
+		<Suffix>（攻）</Suffix>
+		<Desc>\n一种以进攻狂野著称的基础秘体，其独特的运劲技巧可以一定程度上穿透灵气护盾。</Desc>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXhuixuanti</AtkAni>
+		<DefAni>TXtuibufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_tuihengsao01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYtui01</DefEffect>
+		<Parts>	
+			
+			<li Name="LeftPostbrachium">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,15,40,100"/>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="0,1,4,12"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,15,40,100"/>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="0,1,4,12"/>
+				</Labels>
+			</li>
+			<li Name="LeftHumerus">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,30,70"/>
+					<li Name="QuenchingLabel_Lv1_B01_All" Levels="0,0,4,12"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,30,70"/>
+					<li Name="QuenchingLabel_Lv1_B01_All" Levels="0,0,4,12"/>
+				</Labels>
+			</li>		
+			<li Name="RightPostbrachium">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,15,40,100"/>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="0,1,4,12"/>
+				</Labels>
+			</li>	
+			<li Name="RightForearm">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,15,40,100"/>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="0,1,4,12"/>
+				</Labels>
+			</li>
+			<li Name="RightHumerus">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,30,70"/>
+					<li Name="QuenchingLabel_Lv1_B01_All" Levels="0,0,4,12"/>
+				</Labels>
+			</li>
+			<li Name="RightRadiusAndUlna">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,30,70"/>
+					<li Name="QuenchingLabel_Lv1_B01_All" Levels="0,0,4,12"/>
+				</Labels>
+			</li>	
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>少量提高秘体攻击性能</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="500"/>
+					<li Name="AtkRate" AddV="0.1"/>
+					<li Name="ArmorPenetration" AddV="0.05"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>大量提高秘体攻击命中率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.5"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大量提高秘体威力</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="1000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第四重</Title>
+				<Desc>提高秘体灵气护盾穿透率和威力</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="500"/>
+					<li Name="ArmorPenetration" AddV="0.15"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+
+	<Def Name="SuperPart_TunTian_Def1"><!--基础防御秘体-撼渊腿-->
+		<Prefix>撼渊腿</Prefix>
+		<Suffix>（守）</Suffix>
+		<Desc>\n一种以防御严密著称的基础秘体，以秘法淬炼腿骨，使其拥有超绝的抗打击能力。</Desc>
+		<EquptAdvise>Defense</EquptAdvise>
+		<AtkAni>TXhuixuanti</AtkAni>
+		<DefAni>TXtuibufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_tuihengsao01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYtui01</DefEffect>
+		<Parts>	
+			
+			<li Name="LeftThigh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,15,40,100"/>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="0,1,4,12"/>
+				</Labels>
+			</li>
+			<li Name="LeftCrus">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,15,40,100"/>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="0,1,4,12"/>
+				</Labels>
+			</li>
+			<li Name="LeftThighbone">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,30,70"/>
+					<li Name="QuenchingLabel_Lv1_B02_All" Levels="0,0,4,12"/>
+				</Labels>
+			</li>
+			<li Name="LeftTibia">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,30,70"/>
+					<li Name="QuenchingLabel_Lv1_B02_All" Levels="0,0,4,12"/>
+				</Labels>
+			</li>
+			<li Name="RightThigh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,15,40,100"/>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="0,1,4,12"/>
+				</Labels>
+			</li>
+			<li Name="RightCrus">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="1,15,40,100"/>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="0,1,4,12"/>
+				</Labels>
+			</li>
+			<li Name="RightThighbone">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,30,70"/>
+					<li Name="QuenchingLabel_Lv1_B02_All" Levels="0,0,4,12"/>
+				</Labels>
+			</li>
+			<li Name="RightTibia">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="0,0,30,70"/>
+					<li Name="QuenchingLabel_Lv1_B02_All" Levels="0,0,4,12"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>中量提高秘体性能</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="500"/>
+					<li Name="DefRate" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>大量提高秘体防御成功率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefRate" AddV="0.3"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大量提高秘体坚韧</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="1000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第四重</Title>
+				<Desc>提高秘体防御成功率和法宝镇压率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="500"/>
+					<li Name="CatchFabao" AddV="0.05"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+
+	<Def Name="SuperPart_TunTian_Core1"><!--核心秘体-吞天路-->
+		<Prefix>吞天路</Prefix>
+		<Suffix>（核心）</Suffix>
+		<Desc>\n[size=15][I]人身有大龙，一步一吞天\n百炼吞天路，大道衍天机[/I][/size]\n\n以秘法淬炼自身三宫，自此踏上吞天之路不再回头。\n\n[size=10]修成后开启秘法：[color=#D06508]【吞天】[/color]\n注意：吞天路与衍道行互斥，只能择其一来修行[/size]</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni>TXtuizhangfa</AtkAni>
+		<DefAni>TXshoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_tuizhang01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYshou01</DefEffect>
+		<Parts>	
+			<li Name="UpperElixirField">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Meridian" Levels="5,10,30"/>
+					<li Name="QuenchingLabel_TunTian_A01" Levels="1,1,8"/>
+					<li Name="QuenchingLabel_TunTian_A02" Levels="0,1,8"/>
+					<li Name="QuenchingLabel_TunTian_A03" Levels="0,1,8"/>
+				</Labels>
+			</li>
+			<li Name="MiddleElixirField">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Meridian" Levels="5,10,30"/>
+					<li Name="QuenchingLabel_TunTian_A01" Levels="0,1,8"/>
+					<li Name="QuenchingLabel_TunTian_A02" Levels="1,1,8"/>
+					<li Name="QuenchingLabel_TunTian_A03" Levels="0,1,8"/>
+				</Labels>
+			</li>
+			<li Name="LowerElixirField">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Meridian" Levels="5,10,30"/>
+					<li Name="QuenchingLabel_TunTian_A01" Levels="0,1,8"/>
+					<li Name="QuenchingLabel_TunTian_A02" Levels="0,1,8"/>
+					<li Name="QuenchingLabel_TunTian_A03" Levels="1,1,8"/>
+				</Labels>
+			</li>
+			<li Name="Spine">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Spine" Levels="0,10,30"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>获得神通：[B]【吞天】[/B]</Desc>
+				<UnLockMagic>
+					<li>Magic_Body_TunTian</li>
+				</UnLockMagic>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>提高【吞天】的效果并大量提高真炁恢复速度</Desc>
+				<Modifier>Modifier_TunTian1</Modifier>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大量提高吞噬效果</Desc>
+				<Modifier>Modifier_TunTian2</Modifier>
+			</li>
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_TunTian_Core2"><!--核心秘体-衍道行-->
+		<Prefix>衍道行</Prefix>
+		<Suffix>（核心）</Suffix>
+		<Desc>\n[I][size=15]大道通天骨，衍道寻天机\n逆势为吞天，顺势衍道行[/size][/I]\n\n以秘法淬炼自身三宫，自此踏上衍道之路不再回头。\n\n[size=10]修成后开启秘法：[color=#D06508]【衍道】[/color]\n注意：吞天路与衍道行互斥，只能择其一来修行，且不要轻易毁炼[/size]</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni>TXtuizhangfa</AtkAni>
+		<DefAni>TXshoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_tuizhang01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYshou01</DefEffect>
+		<Parts>	
+			<li Name="UpperElixirField">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Meridian" Levels="5,10,30"/>
+					<li Name="QuenchingLabel_TunTian_B01" Levels="1,1,8"/>
+					<li Name="QuenchingLabel_TunTian_B02" Levels="0,1,8"/>
+					<li Name="QuenchingLabel_TunTian_B03" Levels="0,1,8"/>
+				</Labels>
+			</li>
+			<li Name="MiddleElixirField">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Meridian" Levels="5,10,30"/>
+					<li Name="QuenchingLabel_TunTian_B01" Levels="0,1,8"/>
+					<li Name="QuenchingLabel_TunTian_B02" Levels="1,1,8"/>
+					<li Name="QuenchingLabel_TunTian_B03" Levels="0,1,8"/>
+				</Labels>
+			</li>
+			<li Name="LowerElixirField">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Meridian" Levels="5,10,30"/>
+					<li Name="QuenchingLabel_TunTian_B01" Levels="0,1,8"/>
+					<li Name="QuenchingLabel_TunTian_B02" Levels="0,1,8"/>
+					<li Name="QuenchingLabel_TunTian_B03" Levels="1,1,8"/>
+				</Labels>
+			</li>
+			<li Name="Spine">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Spine" Levels="0,10,30"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>获得神通：[B]【衍道】[/B]</Desc>
+				<UnLockMagic>
+					<li>Magic_Body_YanDao</li>
+				</UnLockMagic>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>提高【衍道】的效果并大量提高最大真炁</Desc>
+				<Modifier>Modifier_YanDao1</Modifier>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大量提高吐纳效果</Desc>
+				<Modifier>Modifier_YanDao2</Modifier>
+			</li>
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_TunTian_Atk2"><!--进阶攻击-吞灭拳-->
+		<Prefix>吞灭拳</Prefix>
+		<Suffix>（攻）</Suffix>
+		<Desc>\n吞天小成后，以秘法淬炼双手，使其布满吞灭之力。一旦练成就拥有强大的破坏力。</Desc>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXhuixuanti</AtkAni>
+		<DefAni>TXtuibufangyu</DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>	
+			
+			<li Name="LeftMetacarpal">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="10,30,80,120"/>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,1,3,6"/>
+					<li Name="QuenchingLabel_Lv2_B01_All" Levels="1,3,4,9"/>
+				</Labels>
+			</li>
+			<li Name="RightMetacarpal">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="10,30,80,120"/>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,1,3,6"/>
+					<li Name="QuenchingLabel_Lv2_B01_All" Levels="1,3,4,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftHand">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="10,30,80,120"/>
+					<li Name="QuenchingLabel_TunTian_Flesh" Levels="0,1,3,6"/>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="1,3,4,9"/>
+				</Labels>
+			</li>
+			<li Name="RightHand">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="10,30,80,120"/>
+					<li Name="QuenchingLabel_TunTian_Flesh" Levels="0,1,3,6"/>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="1,3,4,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftThumb">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,1,3,6"/>
+				</Labels>
+			</li>
+			<li Name="LeftForeFinger">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,1,3,6"/>
+				</Labels>
+			</li>
+			<li Name="LeftMiddleFinger">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,0,3,6"/>
+				</Labels>
+			</li>
+			<li Name="LeftRingFinger">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,0,3,6"/>
+				</Labels>
+			</li>
+			<li Name="LeftLittleFinger">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,0,0,6"/>
+				</Labels>
+			</li>
+			<li Name="RightThumb">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,1,3,6"/>
+				</Labels>
+			</li>
+			<li Name="RightForeFinger">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,1,3,6"/>
+				</Labels>
+			</li>
+			<li Name="RightMiddleFinger">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,0,3,6"/>
+				</Labels>
+			</li>
+			<li Name="RightRingFinger">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,0,3,6"/>
+				</Labels>
+			</li>
+			<li Name="RightLittleFinger">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,0,0,6"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>中量提高秘体威力</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="1000"/>
+					<li Name="AtkRate" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>中量提高灵气护盾穿透率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大量提高秘体威力</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="1500"/>
+					<li Name="AtkRate" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第四重</Title>
+				<Desc>大量提高灵气护盾穿透率并少量提高秘体威力</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="500"/>
+					<li Name="ArmorPenetration" AddV="0.3"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_TunTian_Def2"><!--进阶防御-衍道身-->
+		<Prefix>衍道身</Prefix>
+		<Suffix>（守）</Suffix>
+		<Desc>\n衍道小成后，以秘法淬炼躯干，秘体练成后会有极高的防御。</Desc>
+		<EquptAdvise>Defense</EquptAdvise>
+		<AtkAni>TXxiji</AtkAni>
+		<DefAni>TXtuibufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_xiji01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYtui01</DefEffect>
+		<Parts>	
+			
+			<li Name="Spine">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Spine" Levels="30,40,50,70"/>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,1,8,15"/>
+				</Labels>
+			</li>
+			<li Name="LeftRibs1">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="30,20,50,70"/>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,1,3,6"/>
+					<li Name="QuenchingLabel_Lv3_B01_All" Levels="0,1,1,4"/>
+				</Labels>
+			</li>
+			<li Name="RightRibs1">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="30,20,50,70"/>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,1,3,6"/>
+					<li Name="QuenchingLabel_Lv3_B01_All" Levels="0,1,1,4"/>
+				</Labels>
+			</li>
+			<li Name="Pelvis">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="30,20,50,70"/>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="0,1,3,6"/>
+					<li Name="QuenchingLabel_Lv3_B01_All" Levels="0,1,1,4"/>
+				</Labels>
+			</li>
+			<li Name="Dorsum">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="30,50,80,120"/>
+					<li Name="QuenchingLabel_TunTian_Flesh" Levels="0,1,3,6"/>
+					<li Name="QuenchingLabel_Lv3_F01_All" Levels="0,1,2,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>中量提高秘体性能</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="1000"/>
+					<li Name="DefRate" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>中量提高秘体防御成功率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefRate" AddV="0.3"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大量提高秘体坚韧</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="1500"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第四重</Title>
+				<Desc>提高秘体威力，秘体防御成功率和法宝镇压率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="500"/>
+					<li Name="DefRate" AddV="0.1"/>
+					<li Name="CatchFabao" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_TunTian_Effect1"><!--辅助秘体-混元脊-->
+		<Prefix>混元脊</Prefix>
+		<Suffix>（辅）</Suffix>
+		<Desc>\n取大道混元之意，以秘法淬炼脊柱。修成后大幅提高淬体速度，身体强度</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni>TXxiji</AtkAni>
+		<DefAni>TXtuibufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_xiji01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYtui01</DefEffect>
+		<Parts>	
+			
+			<li Name="Spine">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Spine" Levels="50,80,100"/>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="5,10,15"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>秘体威力提升40%</Desc>
+				<Modifier>Modifier_HunYuanJi1</Modifier>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>解锁更多的效果秘体栏位</Desc>
+				<Modifier>Modifier_HunYuanJi2</Modifier>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大幅提高真炁恢复速度</Desc>
+				<Modifier>Modifier_HunYuanJi3</Modifier>
+			</li>
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_TunTian_Effect2"><!--辅助秘体-六库仙贼-->
+		<Prefix>六库仙贼</Prefix>
+		<Suffix>（辅）</Suffix>
+		<Desc>[I][Size=15]淬六腑，养仙贼，盗生机[/Size][/I]\n\n以秘法淬炼六腑，壮大自身本源，炼之大成可解锁神通【六库仙贼】</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni>TXlianhuanzhang</AtkAni>
+		<DefAni>TXshoubufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_tuizhang01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYshou01</DefEffect>
+		<Parts>				
+			<li Name="Liver">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Liver" Levels="5,20,40,60"/>
+					<li Name="QuenchingLabel_Lv3_O01_All" Levels="0,0,1,2"/>
+				</Labels>
+			</li>
+			<li Name="Spleen">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Spleen" Levels="5,20,40,60"/>
+					<li Name="QuenchingLabel_Lv3_O01_All" Levels="0,0,1,2"/>
+				</Labels>
+			</li>
+			<li Name="Lung">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Lung" Levels="5,20,40,60"/>
+					<li Name="QuenchingLabel_Lv3_O01_All" Levels="0,0,1,2"/>
+				</Labels>
+			</li>
+			<li Name="Kidney">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Kidney" Levels="5,20,40,60"/>
+					<li Name="QuenchingLabel_Lv3_O02_All" Levels="0,0,1,2"/>
+				</Labels>
+			</li>
+			<li Name="Stomach">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Stomach" Levels="5,20,40,60"/>
+					<li Name="QuenchingLabel_Lv3_O02_All" Levels="0,0,1,2"/>
+				</Labels>
+			</li>
+			<li Name="Intestines">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Intestines" Levels="5,20,40,60"/>
+					<li Name="QuenchingLabel_Lv3_O02_All" Levels="0,0,1,2"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>大量提高真炁恢复速度</Desc>
+				<Modifier>Modifier_LiuKuXianZei1</Modifier>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>精元转化效率提升</Desc>
+				<Modifier>Modifier_LiuKuXianZei2</Modifier>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大幅提高所有秘体攻击威力</Desc>
+				<Modifier>Modifier_LiuKuXianZei3</Modifier>
+			</li>
+			<li>
+				<Title>第四重</Title>
+				<Desc>解锁神通【六库仙贼】</Desc>
+				<UnLockMagic>
+					<li>Magic_Body_LiuKu</li>
+				</UnLockMagic>
+			</li>
+		</Levels>
+	</Def>	
+	
+	<Def Name="SuperPart_TunTian_Effect3"><!--辅助秘体-炁体源流-->
+		<Prefix>炁体源流</Prefix>
+		<Suffix>（辅）</Suffix>
+		<Desc>[I][Size=15]呼吸吐纳，衍道源流[/Size][/I]\n\n以秘法淬炼口鼻喉脑，凝真炁本源，炼之大成可解锁神通【炁体源流】</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>				
+			<li Name="Mouth">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Mouth" Levels="5,20,40,60"/>
+					<li Name="QuenchingLabel_Lv1_O01_All" Levels="0,4,8,12"/>
+				</Labels>
+			</li>
+			<li Name="Nose">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Nose" Levels="5,20,40,60"/>
+					<li Name="QuenchingLabel_Lv1_O01_All" Levels="0,4,8,12"/>
+				</Labels>
+			</li>
+			<li Name="Throat">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Throat" Levels="5,20,40,60"/>
+					<li Name="QuenchingLabel_Lv1_O01_All" Levels="0,4,8,12"/>
+				</Labels>
+			</li>
+			<li Name="Brain">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Brain" Levels="5,20,40,60"/>
+					<li Name="QuenchingLabel_Lv1_O01_All" Levels="0,4,8,12"/>
+				</Labels>
+			</li>
+			<li Name="Skull">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="5,20,40,60"/>
+					<li Name="QuenchingLabel_Lv2_B01_Chun" Levels="0,1,2,3"/>
+				</Labels>
+			</li>
+			<li Name="HeadFlesh">
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Flesh" Levels="5,20,40,60"/>
+					<li Name="QuenchingLabel_Lv2_F01_Chun" Levels="0,1,2,3"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>大幅提高真炁上限</Desc>
+				<Modifier>Modifier_QiTiYuanLiu1</Modifier>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>提高自身对极限适应程度</Desc>
+				<Modifier>Modifier_QiTiYuanLiu2</Modifier>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大幅提高所有秘体坚韧</Desc>
+				<Modifier>Modifier_QiTiYuanLiu3</Modifier>
+			</li>
+			<li>
+				<Title>第四重</Title>
+				<Desc>解锁神通【炁体源流】</Desc>
+				<Modifier></Modifier>
+				<UnLockMagic>
+					<li>Magic_Body_QiTiYuanLiu</li>
+				</UnLockMagic>
+			</li>
+		</Levels>
+	</Def>	
+		
+	<Def Name="SuperPart_TunTian_Att1"><!--姿态秘体-吞天之意-->
+		<Prefix>吞天之意</Prefix>
+		<Suffix>（姿态）</Suffix>
+		<Desc>\n以秘法淬炼脑部，强化吞天意志。\n\n[Size=10]解锁战斗姿态：吞天之意[/Size]</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>	
+			
+			<li Name="Brain">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Organ" Levels="5"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>习得战斗姿态：吞天之意</Desc>
+				<UnLockAttitude>
+					<li>BPAttitudes_TunTian</li>
+				</UnLockAttitude>
+			</li>
+		</Levels>
+	</Def>
+		
+	<Def Name="SuperPart_TunTian_Att2"><!--姿态秘体-大道之姿-->
+		<Prefix>大道之姿</Prefix>
+		<Suffix>（姿态）</Suffix>
+		<Desc>\n将大道淬炼入脑部，可借此施展大道之姿。\n\n[Size=10]解锁战斗姿态：大道之姿[/Size]</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>	
+			<li Name="Brain">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Organ" Levels="5"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>习得战斗姿态：大道之姿</Desc>
+				<UnLockAttitude>
+					<li>BPAttitudes_TunTian</li>
+				</UnLockAttitude>
+			</li>
+		</Levels>
+	</Def>
+		
+	<Def Name="SuperPart_TunTian_Atk3"><!--终极攻击-吞天灭地-->
+		<Prefix>吞天灭地</Prefix>
+		<Suffix>（攻）</Suffix>
+		<Desc>淬炼脊柱以统合全身，即可形成威力极大的终极攻击秘体！</Desc>
+		<EquptAdvise>Attack</EquptAdvise>
+		<AtkAni>TXhuixuanti</AtkAni>
+		<DefAni>TXtuibufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_tuihengsao01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYtui01</DefEffect>
+		<Parts>				
+			<li Name="Spine">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="1,3,6,9"/>
+					<li Name="QuenchingLabel_Lv2_B01_Chun" Levels="0,3,6,9"/>
+					<li Name="QuenchingLabel_Lv3_B01_JiaoLongYuanJing" Levels="0,0,1,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>			
+			<li>
+				<Title>第一重</Title>
+				<Desc>大提高秘体攻击性能</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="2000"/>
+					<li Name="AtkRate" AddV="0.15"/>
+					<li Name="ArmorPenetration" AddV="0.05"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>大量提高秘体攻击命中率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.25"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大量提高秘体威力</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="3000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第四重</Title>
+				<Desc>提高秘体威力，降低秘体运转消耗</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="1000"/>
+					<li Name="FightCost" AddV="-30"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+		
+	<Def Name="SuperPart_TunTian_Def3"><!--终极防御-以身衍道-->
+		<Prefix>以身衍道</Prefix>
+		<Suffix>（守）</Suffix>
+		<Desc>淬炼肋骨以统合内腑天地，练成内腑天地间便是新的大道演化之地，故而防御惊人。</Desc>
+		<EquptAdvise>Defense</EquptAdvise>
+		<AtkAni>TXhuixuanti</AtkAni>
+		<DefAni>TXtuibufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_tuihengsao01</AtkEffect>
+		<DefEffect>Effect/gsq/Prefab/tixiu/fx_FYtui01</DefEffect>
+		<Parts>				
+			<li Name="LeftRibs1">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="1,3,6,9"/>
+					<li Name="QuenchingLabel_Lv2_B01_Chun" Levels="0,1,2,3"/>
+					<li Name="QuenchingLabel_Lv2_B01_SiHunZhiXi" Levels="0,0,1,4"/>
+				</Labels>
+			</li>
+			<li Name="RightRibs1">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Bone" Levels="1,3,6,9"/>
+					<li Name="QuenchingLabel_Lv2_B01_Chun" Levels="0,1,2,3"/>
+					<li Name="QuenchingLabel_Lv2_B01_SiHunZhiXi" Levels="0,0,1,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>大量提高秘体性能</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="2000"/>
+					<li Name="DefRate" AddV="0.1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>中量提高秘体防御成功率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefRate" AddV="0.15"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>大量提高秘体坚韧</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="3000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第四重</Title>
+				<Desc>提高秘体坚韧和法宝镇压率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="1000"/>
+					<li Name="CatchFabao" AddV="0.4"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+		
+	<Def Name="SuperPart_TunTian_Effect4"><!--辅助秘体-天地烘炉-->
+		<Prefix>天地烘炉</Prefix>
+		<Suffix>（辅）</Suffix>
+		<Desc>以天机精华淬炼心脏，可将心脏变为天地间一等一的烘炉。</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>				
+			<li Name="Heart">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Organ" Levels="10,15"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>获得神通：天地烘炉\n\n消耗仙道精华可随机提升物品品阶</Desc>
+				<UnLockMagic>
+					<li>Magic_Body_HongLu</li>
+				</UnLockMagic>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>获得神通：炼体重生\n\n以自身庞大的精气滴血重生。</Desc>
+				<UnLockMagic>
+					<li>Magic_Body_TunTian_Reborn</li>
+				</UnLockMagic>
+			</li>
+		</Levels>
+	</Def>
+
+	<Def Name="SuperPart_TunTian_Effect5"><!--辅助秘体-大道之心-->
+		<Prefix>大道之心</Prefix>
+		<Suffix>（辅）</Suffix>
+		<Desc>以天机精华淬炼心脏，化肉体凡心为大道之心。</Desc>
+		<EquptAdvise>Effect</EquptAdvise>
+		<AtkAni></AtkAni>
+		<DefAni></DefAni>
+		<AtkEffect></AtkEffect>
+		<DefEffect></DefEffect>
+		<Parts>				
+			<li Name="Heart">
+				<Labels>
+					<li Name="QuenchingLabel_TunTian_Organ" Levels="10,15"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>获得神通：精元衍道\n\n消耗自身精元演化大道，以此促进自身周围的土地灵气增加。</Desc>
+				<UnLockMagic>
+					<li>Magic_Body_GetLingTu_Jin</li>
+					<li>Magic_Body_GetLingTu_Mu</li>
+					<li>Magic_Body_GetLingTu_Shui</li>
+					<li>Magic_Body_GetLingTu_Huo</li>
+					<li>Magic_Body_GetLingTu_Tu</li>
+				</UnLockMagic>
+			</li>
+			<li>
+				<Title>第一重</Title>
+				<Desc>大幅提高心境</Desc>
+				<Modifier>Modifier_DaDaoZhiXin2</Modifier>
+			</li>
+		</Levels>
+	</Def>
+</List></BPSuperPartDefs>

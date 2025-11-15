@@ -1,0 +1,92 @@
+<BodyQuenchingLabelDefs><List>
+
+	<Def Name="QuenchingLabel_TunTian_Bone">
+		<DisplayName>衍道玉骨</DisplayName>
+		<Group></Group>		
+		<LabelNumAddBone>2</LabelNumAddBone>		
+		<Desc>以特殊的秘法淬炼骨骼，使其发生根本性的异变，使用天机精华淬炼更容易获得。[size=10][color=#D06508]\n大量提高炼体者骨骼淬炼条目上限[/color][/size]</Desc>
+		<MaxLevel>15</MaxLevel>
+		<Rate>12</Rate>
+	</Def>
+	
+	<Def Name="QuenchingLabel_TunTian_Organ">
+		<DisplayName>吞天内腑</DisplayName>
+		<Group></Group>		
+		<LabelNumAddOrgan>2</LabelNumAddOrgan>		
+		<Desc>以特殊的秘法淬炼器官，使其发生根本性的异变，使用天机精华淬炼更容易获得。[size=10][color=#D06508]\n大量提高炼体者器官淬炼条目上限[/color][/size]</Desc>
+		<MaxLevel>15</MaxLevel>
+		<Rate>12</Rate>
+	</Def>
+		
+	<Def Name="QuenchingLabel_TunTian_Flesh">
+		<DisplayName>天机血肉</DisplayName>
+		<Group></Group>			
+		<LabelNumAddFlesh>2</LabelNumAddFlesh>		
+		<Desc>以特殊的秘法淬炼血肉，使其发生根本性的异变，使用天机精华淬炼更容易获得。[size=10][color=#D06508]\n大量提高炼体者血肉淬炼条目上限[/color][/size]</Desc>
+		<MaxLevel>15</MaxLevel>
+		<Rate>12</Rate>
+	</Def>
+
+	<Def Name="QuenchingLabel_TunTian_A01">
+		<DisplayName>吞天之炼</DisplayName>
+		<Group></Group>		
+		<Desc>躯体经过淬炼，变得更适宜修炼《衍道吞天诀》，使用天机精华淬炼更容易获得。[size=10][color=#D06508]\n少量提高精元转化效率[/color][/size]</Desc>
+		<MaxLevel>20</MaxLevel>
+		<Modifier>Modifier_QuenchingLabel_TunTian_A01</Modifier>
+		<Rate>5</Rate>
+	</Def>
+	<Def Name="QuenchingLabel_TunTian_A02">
+		<DisplayName>吞天之路</DisplayName>
+		<Group></Group>		
+		<Desc>躯体经过淬炼，变得更适宜修炼《衍道吞天诀》，使用天机精华淬炼更容易获得。[size=10][color=#D06508]\n少量提高真炁恢复速度[/color][/size]</Desc>
+		<MaxLevel>20</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier>Modifier_QuenchingLabel_TunTian_A02</Modifier>
+	</Def>
+	<Def Name="QuenchingLabel_TunTian_A03">
+		<DisplayName>吞天之意</DisplayName>
+		<Group></Group>		
+		<Desc>躯体经过淬炼，变得更适宜修炼《衍道吞天诀》，使用天机精华淬炼更容易获得。[size=10][color=#D06508]\n少量提高寿元[/color][/size]</Desc>
+		<MaxLevel>20</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier>Modifier_QuenchingLabel_TunTian_A03</Modifier>
+	</Def>
+
+	<Def Name="QuenchingLabel_TunTian_B01">
+		<DisplayName>衍道之炼</DisplayName>
+		<Group></Group>		
+		<Desc>躯体经过淬炼，变得更适宜修炼《衍道吞天诀》，使用天机精华淬炼更容易获得。[size=10][color=#D06508]\n少量提高真炁上限[/color][/size]</Desc>
+		<MaxLevel>20</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier>Modifier_QuenchingLabel_TunTian_B01</Modifier>
+	</Def>
+	<Def Name="QuenchingLabel_TunTian_B02">
+		<DisplayName>衍道之行</DisplayName>
+		<Group></Group>		
+		<Desc>躯体经过淬炼，变得更适宜修炼《衍道吞天诀》，使用天机精华淬炼更容易获得。[size=10][color=#D06508]\n少量提高心情基础值[/color][/size]</Desc>
+		<MaxLevel>20</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier>Modifier_QuenchingLabel_TunTian_B02</Modifier>
+	</Def>
+	<Def Name="QuenchingLabel_TunTian_B03">
+		<DisplayName>衍道之意</DisplayName>
+		<Group></Group>		
+		<Desc>躯体经过淬炼，变得更适宜修炼《衍道吞天诀》，使用天机精华淬炼更容易获得。[size=10][color=#D06508]\n少量提升寿元[/color][/size]</Desc>
+		<MaxLevel>20</MaxLevel>
+		<Rate>5</Rate>
+		<Modifier>Modifier_QuenchingLabel_TunTian_A03</Modifier>
+	</Def>
+
+	<Def Name="QuenchingLabel_Lv0_Base_Meridian">
+		<DisplayName>百炼穴窍</DisplayName>
+		<Group></Group>		
+		<Desc>穴窍经过淬炼，根基变得更加充盈。使用生机精华，生命本源，造化命元淬炼躯体，可以加速该过程。[size=10][color=#D06508]\n微量提高炼体者真炁最大值\n少量提高所属秘体的真炁恢复速度\n少量提高炼体者身体强度[/color][/size]</Desc>
+		<MaxLevel>100</MaxLevel>
+		<Rate>1</Rate>
+		<Modifier>Modifier_QuenchingLabel_Lv0_Base_Organ</Modifier>
+		<SuperPartProperties>
+			<li Name="RecoverQi" AddV="0.05"/>
+		</SuperPartProperties>
+	</Def>
+
+</List></BodyQuenchingLabelDefs>

@@ -1,0 +1,84 @@
+<ThingDefs><List>
+
+	<ThingDef Type="Item" Name="Item_BodyPractice_TianJi" Parent="Item_BodyPracticeBase">
+	<ThingName>天机精华</ThingName>
+	<Desc>以秘法截取大道中的一缕天机熔炼而成的精华，是修行[B]【衍道吞天诀】[/B]的重要资粮。</Desc>	
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>
+	<Rate>12</Rate>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_TunTian_jingjin" Parent="Item_BodyPracticeBase">
+	<ThingName>天机精晶</ThingName>
+	<Desc>天机精华凝聚而成的精华，是《衍道吞天诀》突破瓶颈的必须之物。</Desc>
+	<TexPath>res\Sprs\object_yaozujueqi\object_dingjijinghua01</TexPath>
+	<Rate>12</Rate>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_TunTian_lingxing" Parent="DanBase">
+		<ThingName>灵性精华</ThingName>
+		<TexPath>res/Sprs/object/object_benyuanwu01</TexPath>
+      	<Color>66ffff</Color>
+		<Light>
+			<Color>66ffff</Color>
+		</Light>
+		<Desc>盗取灵植灵性凝聚的精华，服食后将获得以下加成：\n\n-增加10年寿元\n-小幅化解道行\n-小幅降低潜力值</Desc>	
+		<Rate>8</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Modifier_TunTian_LingXing</Modifier>
+				<Fesistance>0.7</Fesistance>
+			</Elixir>
+			<BeMade>
+			<CostStuffCount>1</CostStuffCount>
+			<CostItems>
+				<Item name="Item_Wonder_QianKunLingJing" count="1" />
+			</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>   
+		</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_TunTian_shaxing" Parent="DanBase">
+		<ThingName>煞性精华</ThingName>
+		<TexPath>res/Sprs/object/object_benyuanwu01</TexPath>
+      	<Color>ff3366</Color>
+		<Light>
+			<Color>ff3366</Color>
+		</Light>
+		<Desc>盗取灵植煞性凝聚的精华，服食后将获得以下加成：\n\n-降低50年寿元\n-大幅化解道行</Desc>	
+		<Rate>8</Rate>
+		<Beauty>5</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Modifier>Modifier_TunTian_ShaXing</Modifier>
+				<Fesistance>0.7</Fesistance>
+			</Elixir>
+			<BeMade>
+			<CostStuffCount>1</CostStuffCount>
+			<CostItems>
+				<Item name="Item_Wonder_QianKunLingJing" count="1" />
+			</CostItems>
+			</BeMade>
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>0</Value>   
+		</Element>
+	</ThingDef>
+</List></ThingDefs>

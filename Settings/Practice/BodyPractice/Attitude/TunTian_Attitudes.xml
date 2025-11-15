@@ -1,0 +1,16 @@
+<BPAttitudes><List>
+		
+	<Def Name="BPAttitudes_TunTian"><!--通用常驻-->
+		<DisplayName>吞天之意</DisplayName>
+		<Desc>以吞天之意运转秘体，直接突击敌人本体，大幅提高进攻力！</Desc>
+		<AtkFabaoCount>999</AtkFabaoCount><!--至少多少个法宝以我为目标时会攻击法宝-->
+		<Modifier>TunTian_Attitude_Atk</Modifier><!--用可见的modfieir-->
+	</Def>
+	<Def Name="BPAttitudes_DaDao"><!--通用常驻-->
+		<DisplayName>大道之姿</DisplayName>
+		<Desc>以身衍道，我身之处便是大道中，。大幅提高法宝镇压效果！</Desc>
+		<AtkFabaoCount>0</AtkFabaoCount><!--至少多少个法宝以我为目标时会攻击法宝-->
+		<Modifier>TunTian_Attitude_Def</Modifier><!--用可见的modfieir-->
+	</Def>
+
+</List></BPAttitudes>

@@ -1,0 +1,28 @@
+<ModifierDefs><List>
+
+	<Modifier Name="Modifier_TunTian_LingXing" Type="Normal">
+		<DisplayName>灵性精华</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="20"/>
+			<li Name="AbilityLvAddV" AddV="-5"/>
+        	<li Name="PotentialOfBasepracticeAddValue" AddV="-0.2"/>
+		</Properties>
+	</Modifier> 
+
+	<Modifier Name="Modifier_TunTian_ShaXing" Type="Normal">
+		<DisplayName>煞性精华</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="-50"/>
+			<li Name="AbilityLvAddV" AddV="-40"/>
+		</Properties>
+	</Modifier> 
+
+</List></ModifierDefs>

@@ -1,0 +1,20 @@
+<BPQuenchingMethods><List>
+	
+	<Def Name="BPQuenchingMethods_TianJi"><!--淬炼之法-->
+		<DisplayName>天机淬体法</DisplayName>
+		<Desc>以天机精华对身躯进行淬炼，每次运转此法会对目标部位进行3次淬炼，虽然会耗费更多精华，但最后一次必定出现【衍道吞天诀】独有的进化方向。</Desc> 
+		<RollCount>3</RollCount> 
+		<LabelMoreCount>2</LabelMoreCount>
+		<CostScaleAddtion>5</CostScaleAddtion>
+		<CycleScaleAddtion>2</CycleScaleAddtion>
+		<ItemNeed>Item_BodyPractice_TianJi</ItemNeed>
+		<LabelCacheWeightAddtion>
+			<li Name="Cache1" Value="10000"/>
+			<li Name="Cache2" Value="5000"/>
+			<li Name="Cache3" Value="5000"/>
+			<li Name="Cache4" Value="5000"/>
+		</LabelCacheWeightAddtion>
+		<SpecialFlag>NEEDCACHE_Cache110</SpecialFlag>
+	</Def>
+	
+</List></BPQuenchingMethods>

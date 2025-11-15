@@ -1,0 +1,11 @@
+﻿<Experiences><List>	
+	<Experience Name="TunTian_Experience" Group="G1">
+		<DisplayName>吞天传承</DisplayName>
+		<Desc>早年你曾在机缘巧合获得体修神功[B]《衍道吞天诀》[/B]，这部体修功法有衍道和吞天两大分支。\n\n\n[size=10]解锁功法：[color=#D06508]《衍道吞天诀》[/color][/size]</Desc>
+		<Point>1</Point>
+		<RaceKind>Human</RaceKind>
+		<Gongs>
+			<li>Body_Gong_TunTian</li>
+		</Gongs>
+	</Experience>
+</List></Experiences>

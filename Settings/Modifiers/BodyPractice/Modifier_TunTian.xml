@@ -1,0 +1,281 @@
+<ModifierDefs><List>
+
+<!-- 特殊用途 -->
+	<Modifier Name="TunTian_Modifier_Check" Type="Normal">
+		<DisplayName>秘体分支检查</DisplayName>
+		<Desc>突破时用于检查秘体分支，从而添加不同的秘体，请勿将这个效果配置到其他地方。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>0.5</Duration>
+		<Display>0</Display>
+		<LuaClassName>modifier_tuntian_check</LuaClassName>
+	</Modifier>
+
+<!-- 战斗姿态 -->
+	<Modifier Name="TunTian_Attitude_Atk" Type="Normal">
+		<DisplayName>吞天之意</DisplayName>
+		<Desc>以吞天之意运转秘体，直接突击敌人本体，大幅提高进攻力！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" BAddP="0.2" />
+			<li Name="BodyPratice_DefenseRecoverZhenQi" BAddP="0.2" />
+			<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" BAddP="0.2"/>
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" BAddP="0.2" />
+			<li Name="BodyPratice_DefenseRecoverZhenQi" AddP="0.5"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="TunTian_Attitude_Def" Type="Normal">
+		<DisplayName>大道之姿</DisplayName>
+		<Desc>以身衍道，我身之处便是大道中，。大幅提高法宝镇压效果！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPratice_MaxZhenQi" BAddV="2000"/>
+			<li Name="BodyPratice_CatchFaboValue" AddP="-2"/>
+			<li Name="BodyPractice_SuperPartAddv_CatchFabao" BAddP="1" />
+			<li Name="BodyPractice_SuperPartAddp_DefPower" BAddP="0.5"/>
+		</Properties>
+	</Modifier>
+
+
+
+<!-- 秘体 -->
+	<Modifier Name="Modifier_YanDao1" Type="Normal">
+		<DisplayName>衍道1</DisplayName>
+		<Desc>大量提高真炁</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPratice_MaxZhenQi" AddV="1000"/>
+		</Properties>		
+	</Modifier>
+	<Modifier Name="Modifier_YanDao2" Type="Normal">
+		<DisplayName>衍道2</DisplayName>
+		<Desc>吐纳效率提升</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPractice_Other_TunaAddp" BAddP="0.2"/>
+		</Properties>		
+	</Modifier>
+
+	<Modifier Name="Modifier_TunTian1" Type="Normal">
+		<DisplayName>吞天1</DisplayName>
+		<Desc>大幅提高回炁</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="100"/>
+		</Properties>		
+	</Modifier>
+	<Modifier Name="Modifier_TunTian2" Type="Normal">
+		<DisplayName>吞天2</DisplayName>
+		<Desc>吞噬效率提升</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPractice_EatItemProduceCountAddp" BAddP="0.1"/>
+			<li Name="BodyPractice_EatItemProduceRateAddp" BAddP="0.1"/>
+		</Properties>		
+	</Modifier>
+
+	<Modifier Name="Modifier_HunYuanJi1" Type="Normal">
+		<DisplayName>混元脊1</DisplayName>
+		<Desc>秘体威力提高40%</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.4"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="0.4"/>
+		</Properties>		
+	</Modifier>
+	<Modifier Name="Modifier_HunYuanJi2" Type="Normal">
+		<DisplayName>混元脊2</DisplayName>
+		<Desc>解锁更多效果栏位</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartBuff_EquptMaxCount" AddV="2"/>
+		</Properties>		
+	</Modifier>
+	<Modifier Name="Modifier_HunYuanJi3" Type="Normal">
+		<DisplayName>混元脊3</DisplayName>
+		<Desc>真炁恢复速度提高200</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="200"/>
+		</Properties>		
+	</Modifier>
+
+	<Modifier Name="Modifier_LiuKuXianZei1" Type="Normal">
+		<DisplayName>六库仙贼1</DisplayName>
+		<Desc>真炁恢复速度提高200</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="200"/>
+		</Properties>		
+	</Modifier>	
+	<Modifier Name="Modifier_LiuKuXianZei2" Type="Normal">
+		<DisplayName>六库仙贼2</DisplayName>
+		<Desc>精元转化提升</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="NutritionToJingYuanK" AddV="10"/>
+		</Properties>		
+	</Modifier>	
+	<Modifier Name="Modifier_LiuKuXianZei3" Type="Normal">
+		<DisplayName>六库仙贼3</DisplayName>
+		<Desc>全局攻击提升60%</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="0.6"/>
+		</Properties>		
+	</Modifier>	
+
+	<Modifier Name="Modifier_QiTiYuanLiu1" Type="Normal">
+		<DisplayName>炁体源流1</DisplayName>
+		<Desc>真炁上限提升4000</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPratice_MaxZhenQi" AddV="4000"/>
+		</Properties>		
+	</Modifier>
+	<Modifier Name="Modifier_QiTiYuanLiu2" Type="Normal">
+		<DisplayName>炁体源流2</DisplayName>
+		<Desc>适宜温度范围扩大</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="ComfyTMin" AddV="-120"/>
+			<li Name="ComfyTMax" AddV="200"/>
+		</Properties>		
+	</Modifier>
+	<Modifier Name="Modifier_QiTiYuanLiu3" Type="Normal">
+		<DisplayName>炁体源流3</DisplayName>
+		<Desc>秘体防御提高60%</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="0.6"/>
+		</Properties>		
+	</Modifier>
+
+	<Modifier Name="Modifier_DaDaoZhiXin2" Type="Normal">
+		<DisplayName>大道之心2</DisplayName>
+		<Desc>心境基础值提高40</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="40"/>
+		</Properties>		
+	</Modifier>
+
+<!-- 淬炼标签 -->
+
+	<Modifier Name="Modifier_QuenchingLabel_TunTian_A01" Type="Normal">
+		<DisplayName>吞天之炼</DisplayName>
+		<Desc>提高精元转化</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>  
+			<li Name="NutritionToJingYuanK" AddV="0.02"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="Modifier_QuenchingLabel_TunTian_A02" Type="Normal">
+		<DisplayName>吞天之行</DisplayName>
+		<Desc>提高真炁恢复</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>  
+			<li Name="BodyPratice_RecoverZhenQi" AddV="1.5"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="Modifier_QuenchingLabel_TunTian_A03" Type="Normal">
+		<DisplayName>吞天之意</DisplayName>
+		<Desc>提高寿元</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>  
+			<li Name="MaxAge" AddV="5"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="Modifier_QuenchingLabel_TunTian_B01" Type="Normal">
+		<DisplayName>衍道之炼</DisplayName>
+		<Desc>提高真炁上限</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>  
+			<li Name="BodyPratice_MaxZhenQi" AddV="20"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="Modifier_QuenchingLabel_TunTian_B02" Type="Normal">
+		<DisplayName>衍道之行</DisplayName>
+		<Desc>提高心情基础值</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<Properties>  
+			<li Name="BaseEmotionAddV" AddV="1"/>
+		</Properties>
+	</Modifier>
+
+	<Modifier Name="Modifier_Magic_TunTian_Reborn" Type="Normal">
+		<DisplayName>炼体重生</DisplayName>
+		<Desc>以天地烘炉熔炼己身，借助自身庞大的精气（5000点精元），滴血重生，并提升神识，根骨，魅力，悟性和机缘各3成。重生时，自身修为越高，炼体程度越高，天谴也越低！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>0</Sync>
+		<BaseFive>3,3,3,3,3</BaseFive>
+	</Modifier> 
+</List></ModifierDefs>

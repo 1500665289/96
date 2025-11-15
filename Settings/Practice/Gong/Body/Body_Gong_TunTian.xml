@@ -1,0 +1,127 @@
+﻿<Gongs><List>
+	<Gong Name="Body_Gong_TunTian">  
+		<DisplayName>衍道吞天诀</DisplayName>
+		<Desc>[I][B]大道之下，众生蝼蚁[/B][/I]       上古人族修士参悟饕餮修行之法，创造了这门衍道吞天诀。此诀虽威力极大，但因逆天而行故而修行艰难。</Desc>
+		<SelectDesc>踏上体修之路意味着与精气神三者彻底合一，与灵气绝缘，无法使用任何玄妙之物，从此行走天地只凭肉身，确定要走上这条路么？</SelectDesc>
+		<FiveBaseNeed>-1,-1,-1,-1,-1</FiveBaseNeed>
+		<ElementKind>None</ElementKind>
+		<GongKind>Body</GongKind>
+		<Hide>1</Hide>
+		<SuperParts>
+			<li>SuperPart_TunTian_Atk1</li>
+			<li>SuperPart_TunTian_Def1</li>
+			<li>SuperPart_TunTian_Core1</li>
+			<li>SuperPart_TunTian_Core2</li>
+		</SuperParts>		
+		<QuenchingMethods>
+			<li>BPQuenchingMethods_1</li>
+			<li>BPQuenchingMethods_TianJi</li>
+			<li>BPQuenchingMethods_ReQuenching</li>
+		</QuenchingMethods>
+		<Magic>
+			<li>Magic_Body_Banyunqixue</li>
+			<li>Magic_Body_GetItem</li>
+		</Magic>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>天机淬体</DisplayName>
+				<Desc>获得秘体：\n -混元臂（攻）\n -撼渊腿（守）\n -吞天路（核心）\n -衍道行（核心）\n\n[Size=10][I]吞天路和衍道行只能择其一修炼[/I][/Size]</Desc>
+				<Value>5000</Value>
+				<Necks>
+					<Neck Location="0.7" Kind="Chance">
+						<DisplayName>血肉新生</DisplayName>
+						<Desc>以天机精华淬炼血肉，使其新生\n\n[Size=10][I]在突破前务必将吞天路或衍道行炼到第一层并装备，否则突破后无法获得后续秘体[/I][/Size]</Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>						
+						<AddModifier>Gong_Body_1</AddModifier>
+						<ItemCost>
+							<Item name="Item_TunTian_jingjin"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>筋肉大成</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>						
+						<QuenchingMethods>
+							<li>BPQuenchingMethods_1_1</li>
+						</QuenchingMethods>
+						
+						<AddModifier>TunTian_Modifier_Check</AddModifier>
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="6">
+				<DisplayName>衍道洗髓</DisplayName>
+				<Desc>修行[B]吞天路[/B]将获得如下秘体：\n -吞灭拳（攻）\n -混元脊\n\n修行[B]衍道行[/B]将获得如下秘体：\n -衍道身（守）\n -混元脊</Desc>
+				<Value>50000</Value>
+				<Necks>
+					<Neck Location="0.7" Kind="Chance">
+						<DisplayName>衍天机</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Body_2</AddModifier>
+						<ItemCost>
+							<Item name="Item_TunTian_jingjin"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="1" Kind="Thunder">
+						<DisplayName>洗髓</DisplayName>
+						<Desc>雷劫洗髓</Desc>
+						<NeckCountdown>1800</NeckCountdown>
+						<ThunderValue>3000</ThunderValue>
+						<AddModifier>TunTian_Modifier_Check</AddModifier>
+						<QuenchingMethods>
+							<li>BPQuenchingMethods_3</li>
+						</QuenchingMethods>
+						
+					</Neck>
+				</Necks>
+			</Stage>				
+		
+			<Stage Name="Stage3" Level="9">
+				<DisplayName>脱胎换骨</DisplayName>
+				<Desc>修行[B]吞天路[/B]将获得如下秘体：\n -六库仙贼\n -吞天之意\n\n修行[B]衍道行[/B]将获得如下秘体：\n -炁体源流\n -大道之姿</Desc>
+				<Value>200000</Value>
+				<Necks>
+					<Neck Location="0.7" Kind="Chance">
+						<DisplayName>元胎</DisplayName>
+						<Desc></Desc>
+						<CostTime>200</CostTime>
+						<SuccessChange>1</SuccessChange>
+						<AddModifier>Gong_Body_3</AddModifier>
+						<QuenchingMethods>
+							<li>BPQuenchingMethods_4</li>
+						</QuenchingMethods>
+						<ItemCost>
+							<Item name="Item_TunTian_jingjin"/>
+						</ItemCost>
+					</Neck>
+					<Neck Location="1" Kind="Thunder">
+						<DisplayName>内外合一</DisplayName>
+						<Desc>以雷劫锻打己身，使其内外合一，以此突破瓶颈进入混元如一之境</Desc>
+						<NeckCountdown>3600</NeckCountdown>
+						<ThunderValue>15000</ThunderValue>
+						<AddModifier>TunTian_Modifier_Check</AddModifier>						
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage4" Level="12">
+				<DisplayName>混元如一</DisplayName>
+				<Desc>修行[B]吞天路[/B]将获得如下秘体：\n -吞天灭地\n -天地烘炉\n\n修行[B]衍道行[/B]将获得如下秘体：\n -以身衍道\n -大道之心</Desc>
+				<Value>800000</Value>
+				<Necks>
+					<Neck Location="1" Kind="God">
+						<DisplayName>天刑</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>520000</ThunderValue>
+						<NeckCountdown>18000</NeckCountdown>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

@@ -1,0 +1,165 @@
+<Magics><List>	
+	
+	<Magic Name="Magic_Body_YanDao" Type="Class">
+		<DisplayName>衍道</DisplayName>
+		<Desc>在目标地点以秘法进行吐纳，使大道衍化于身，以此获得[B]天机精华[/B]。每次吐纳至少消耗50精元。</Desc>
+		<Icon>res\Sprs\ui\icon_jingxituna01</Icon>
+		<Param1>30</Param1><!--持续时间-->
+		<SelectMode>Single</SelectMode>
+		<CheckTag>Practice</CheckTag>
+		<SelectTarget>Point|InLight|WorkPractice|Walkable</SelectTarget>
+		<ClassName>Magic_Body_YanDao</ClassName>
+		<TargetDesc>选择一个进行吐纳的地点</TargetDesc>
+		<Ani>dazuo</Ani>
+	</Magic>	
+	
+	
+	<Magic Name="Magic_Body_TunTian" Type="Class">
+		<DisplayName>吞天</DisplayName>
+		<Desc>以秘法吞噬一定数目的物品（最多10个），根据物品的灵气和品阶，获得一定数目的[B]天机精华[/B]。每次吞噬至少消耗50精元（境界越高，消耗精元越多)\n\n[Size=10]注意：若吞噬数目过少或品质过低，有可能无法获得天机精华[/Size]</Desc>
+		<Icon>res\Sprs\ui\icon_jiasuxiaohua01</Icon>
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<SelectTarget>InLight|Item</SelectTarget>
+		<Param1>10</Param1><!--施法时间-->
+		<ClassName>Magic_Body_TunTian</ClassName>
+		<TargetDesc>请选择一个物品</TargetDesc>
+	</Magic>
+
+	<Magic Name="Magic_Body_GetItem" Type="Class">
+		<DisplayName>气血熔炼</DisplayName>
+		<Desc>以自身气血熔炼精华，以此获得[B]天机精晶[/B]。每次熔炼消耗10天机精华。</Desc>
+		<Icon>res\Sprs\ui\icon_jingxituna01</Icon>
+		<Param1>10</Param1><!--持续时间-->
+		<SelectMode>None</SelectMode>
+		<ClassName>Magic_Body_Item</ClassName>
+		<Ani>dazuo</Ani>
+		<ItemCost>
+			<li name="Item_BodyPractice_TianJi" count="10" quenching="1"/>
+		</ItemCost>
+	</Magic>
+
+	<Magic Name="Magic_Body_LiuKu" Type="Class">
+		<DisplayName>六库仙贼</DisplayName>
+		<Desc>消耗生机精华，盗取一株灵植所有的灵性或者煞性，补充自身精元的同时有一定几率获得特殊的灵性或煞性结晶。</Desc>
+		<Icon>res\Sprs\ui\icon_tuoshan01</Icon>
+		<Param1>15</Param1><!--持续时间-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>InLight|Plant</SelectTarget>
+		<TargetAni>dazuo</TargetAni>
+		<ClassName>Magic_Body_TunTian_GetLingPlant</ClassName>
+		<TargetDesc>请选择一株灵植</TargetDesc>
+		<ItemCost>
+			<li name="Item_BodyPractice_ShengMingLv1" count="100" quenching="1"/>
+		</ItemCost>
+	</Magic>
+
+	<Magic Name="Magic_Body_HongLu" Type="Class">
+		<DisplayName>天地烘炉</DisplayName>
+		<Desc>至少消耗100仙道精华，以天地烘炉蕴养淬炼物品，有一定几率提升物品品阶2阶（心脏淬炼等级越高，几率越高，消耗越大）。</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<Param1>15</Param1><!--持续时间-->
+		<SelectMode>Single</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<SelectTarget>Item</SelectTarget>
+		<ClassName>Magic_Body_TunTian_HongLu</ClassName>
+	</Magic>
+	
+	<Magic Name="Magic_Body_QiTiYuanLiu" Type="Class">
+		<DisplayName>炁体源流</DisplayName>
+		<Desc>消耗400点精元和100个仙道精华，帮助他人提高炼精化气的程度（每次提升400-600点进度）。</Desc>
+		<Icon>res\Sprs\ui\icon_huashang01</Icon>
+		<Param1>10</Param1><!--持续时间-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Npc</SelectTarget>
+		<Ani>chuangong1</Ani>
+		<ClassName>Magic_Body_TunTian_YuanLiu</ClassName>
+		<Ani>dazuo</Ani>
+		<ItemCost>
+			<li name="Item_BodyPractice_XianDaoJingHua" count="100" quenching="1"/>
+		</ItemCost>
+	</Magic>
+
+	<Magic Name="Magic_Body_GetLingTu_Jin" Type="Class">
+		<DisplayName>精元衍道(金)</DisplayName>
+		<Desc>消耗自身精元演化大道，使自身周围的土地变为灵土(金)。（每格土地消耗50精元）</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Ellipse</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<sParam1>LingSoil_TunTian_Jin</sParam1>
+		<Param1>34</Param1>
+		<SelectTarget>InLight</SelectTarget>
+		<ClassName>Magic_Body_TunTian_JingYuan</ClassName>
+		<MaxArea>32</MaxArea>
+		<TargetDesc>请选择一块空地</TargetDesc>
+	</Magic>
+	
+	<Magic Name="Magic_Body_GetLingTu_Mu" Type="Class">
+		<DisplayName>精元衍道(木)</DisplayName>
+		<Desc>消耗自身精元演化大道，使自身周围的土地变为灵土(木)。（每格土地消耗50精元）</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Ellipse</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<sParam1>LingSoil_TunTian_Mu</sParam1>
+		<Param1>34</Param1>
+		<SelectTarget>InLight</SelectTarget>
+		<ClassName>Magic_Body_TunTian_JingYuan</ClassName>
+		<MaxArea>32</MaxArea>
+		<TargetDesc>请选择一块空地</TargetDesc>
+	</Magic>
+
+	<Magic Name="Magic_Body_GetLingTu_Shui" Type="Class">
+		<DisplayName>精元衍道(水)</DisplayName>
+		<Desc>消耗自身精元演化大道，使自身周围的土地变为灵土(水)。（每格土地消耗50精元）</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Ellipse</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<sParam1>LingSoil_TunTian_Shui</sParam1>
+		<Param1>34</Param1>
+		<SelectTarget>InLight</SelectTarget>
+		<ClassName>Magic_Body_TunTian_JingYuan</ClassName>
+		<MaxArea>32</MaxArea>
+		<TargetDesc>请选择一块空地</TargetDesc>
+	</Magic>
+
+	<Magic Name="Magic_Body_GetLingTu_Huo" Type="Class">
+		<DisplayName>精元衍道(火)</DisplayName>
+		<Desc>消耗自身精元演化大道，使自身周围的土地变为灵土(火)。（每格土地消耗50精元）</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Ellipse</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<sParam1>LingSoil_TunTian_Huo</sParam1>
+		<Param1>34</Param1>
+		<SelectTarget>InLight</SelectTarget>
+		<ClassName>Magic_Body_TunTian_JingYuan</ClassName>
+		<MaxArea>32</MaxArea>
+		<TargetDesc>请选择一块空地</TargetDesc>
+	</Magic>
+
+	<Magic Name="Magic_Body_GetLingTu_Tu" Type="Class">
+		<DisplayName>精元衍道(土)</DisplayName>
+		<Desc>消耗自身精元演化大道，使自身周围的土地变为灵土(土)。（每格土地消耗50精元）</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>Ellipse</SelectMode>
+		<TargetAni>dazuo</TargetAni>
+		<sParam1>LingSoil_TunTian_Tu</sParam1>
+		<Param1>34</Param1>
+		<SelectTarget>InLight</SelectTarget>
+		<ClassName>Magic_Body_TunTian_JingYuan</ClassName>
+		<MaxArea>32</MaxArea>
+		<TargetDesc>请选择一块空地</TargetDesc>
+	</Magic>
+
+	<Magic Name="Magic_Body_TunTian_Reborn" Type="Class">
+		<DisplayName>炼体重生（未完成）</DisplayName>
+		<Desc>以天地烘炉熔炼己身，借助自身庞大的精气（5000点精元），滴血重生，并提升神识，根骨，魅力，悟性和机缘各3成。重生时，自身修为越高，炼体程度越高，天谴也越低！</Desc>
+		<Icon>res\Sprs\ui\icon_youcui01</Icon>
+		<SelectMode>None</SelectMode>
+		<Param1>20</Param1><!--持续时间-->
+		<ClassName>Magic_Body_TunTian_LianTi</ClassName>
+		<Ani>dazuo</Ani>
+		<ItemCost>
+			<li name="Item_BodyPractice_XianDaoJingHua" count="100000" quenching="1"/>
+		</ItemCost>
+	</Magic>		
+</List></Magics>
