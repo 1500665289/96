@@ -15,14 +15,14 @@
 	
 	
 	<Magic Name="Magic_Body_TunTian" Type="Class">
-		<DisplayName>吞天</DisplayName>
+		<DisplayName>吞天改衍道</DisplayName>
 		<Desc>以秘法吞噬一定数目的物品（最多10个），根据物品的灵气和品阶，获得一定数目的[B]天机精华[/B]。每次吞噬至少消耗50精元（境界越高，消耗精元越多)\n\n[Size=10]注意：若吞噬数目过少或品质过低，有可能无法获得天机精华[/Size]</Desc>
 		<Icon>res\Sprs\ui\icon_jiasuxiaohua01</Icon>
 		<SelectMode>Single</SelectMode>
 		<TargetAni>dazuo</TargetAni>
 		<SelectTarget>InLight|Item</SelectTarget>
 		<Param1>10</Param1><!--施法时间-->
-		<ClassName>Magic_Body_TunTian</ClassName>
+		<ClassName>Magic_Body_YanDao</ClassName>
 		<TargetDesc>请选择一个物品</TargetDesc>
 	</Magic>
 
